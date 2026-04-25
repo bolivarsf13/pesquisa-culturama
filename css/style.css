@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 100%; /* ajustável pelo usuário */
+}
+
 main {
     width: 100%;
     max-width: 700px;
@@ -20,12 +24,16 @@ img {
 }
 
 body {
-    background-color: #f9f9f9;
-    font-family: "Work Sans", sans-serif;
+    /* background-color: #f9f9f9;
+    font-family: "Work Sans", sans-serif; */
+
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 h1 {
     font-family: "Fjalla One", sans-serif;
+    font-size: 2rem;
 }
 
 form {
@@ -66,6 +74,7 @@ small {
 p {
     margin-bottom: 15px;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 input,
@@ -122,4 +131,14 @@ button[type="submit"]:hover {
 button[type="reset"]:hover {
     background-color: orangered;
     color: white;
+}
+
+:root {
+    --cor-texto: #333333;
+    --cor-fundo: #ffffff;
+}
+
+.theme-high-contrast {
+    --cor-texto: #000000;
+    --cor-fundo: #ffffff;
 }
